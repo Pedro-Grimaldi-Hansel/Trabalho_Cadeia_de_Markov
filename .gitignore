@@ -1,0 +1,32 @@
+# Cache e arquivos compilados do Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Ambientes virtuais e configuracao especifica do computador
+.venv/
+venv/
+env/
+/python-local.txt
+.env
+.env.*
+!.env.example
+
+# Resultados regenerados pelo simulador
+/resultados/
+
+# Arquivos temporarios de editores, Office e sistema operacional
+.idea/
+~$*
+*.tmp
+*.bak
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,31 @@
+{
+  "local": "Juiz de Fora, Minas Gerais, Brasil",
+  "provedor": "Open-Meteo",
+  "modelo": "ERA5",
+  "natureza": "Reanálise: observações combinadas com modelagem; não é medição direta de uma estação local.",
+  "documentacao": "https://open-meteo.com/en/docs/historical-weather-api",
+  "licenca": "CC BY 4.0; atribuição a Open-Meteo e Copernicus/ECMWF ERA5.",
+  "licenca_url": "https://creativecommons.org/licenses/by/4.0/",
+  "transformacoes": "O JSON bruto é preservado. O CSV seleciona os campos diários e acrescenta a classificação E/N/C pelos critérios do trabalho.",
+  "url_consulta": "https://archive-api.open-meteo.com/v1/archive?latitude=-21.76417&longitude=-43.35028&start_date=2020-01-01&end_date=2025-12-31&daily=precipitation_sum%2Ccloud_cover_mean&models=era5&timezone=America%2FSao_Paulo",
+  "parametros": {
+    "latitude": -21.76417,
+    "longitude": -43.35028,
+    "start_date": "2020-01-01",
+    "end_date": "2025-12-31",
+    "daily": "precipitation_sum,cloud_cover_mean",
+    "models": "era5",
+    "timezone": "America/Sao_Paulo"
+  },
+  "coordenadas_celula": {
+    "latitude": -21.75,
+    "longitude": -43.25
+  },
+  "observacao_espacial": "A célula ERA5 representa uma área próxima às coordenadas pedidas, não uma estação dentro da cidade.",
+  "baixado_em_utc": "2026-11-25T07:50:20.812441+00:00",
+  "sha256_bruto": "0cc855ea87f6fb58a90c12ffe784db430c2dfc9138c08d8743b15648bba8a3c3",
+  "dias": 2192,
+  "inicio": "2020-01-01",
+  "fim": "2025-12-31",
+  "regra_classificacao": "C: precipitação diária >= 1 mm; nos demais dias, E: nebulosidade média <= 50%; N: nebulosidade média > 50%. São critérios operacionais deste trabalho, não uma classificação oficial. E pode incluir dias parcialmente nublados."
+}
